@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { word: "Bitte", translations: ["من فضلك", "عفوًا"] },
         
         // الأماكن والاتجاهات
-        { word: "Wo", translations: ["أين"] },
+        { word: "Wo", translations: ["اين"] },
         { word: "Hier", translations: ["هنا"] },
         { word: "Da", translations: ["هناك"] },
         { word: "Links", translations: ["يسار"] },
@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { word: "Familie", translations: ["عائلة"] },
         { word: "Vater", translations: ["اب"] },
         { word: "Mutter", translations: ["ام"] },
-        { word: "Bruder", translations: ["أخ"] },
-        { word: "Schwester", translations: ["أخت"] },
+        { word: "Bruder", translations: ["اخ"] },
+        { word: "Schwester", translations: ["اخت"] },
         { word: "Freund", translations: ["صديق"] },
         { word: "Freundin", translations: ["صديقة"] },
         { word: "Kind", translations: ["طفل"] },
@@ -48,17 +48,17 @@ document.addEventListener("DOMContentLoaded", function () {
         { word: "Guten Tag", translations: ["نهارك سعيد"]  },
         { word: "Guten Abend", translations: ["مساء الخير"] },
         { word: "Gute Nacht", translations: ["ليلة سعيدة"] },
-        { word: "Wie geht’s?", translations: ["كيف حالك؟"] },
-        { word: "Mir geht’s gut", translations: ["أنا بخير"] },
+        { word: "Wie geht’s?", translations: ["كيف حالك ؟"] },
+        { word: "Mir geht’s gut", translations: ["انا بخير"] },
         { word: "Danke", translations: ["شكرًا"] },
         { word: "Bitte", translations: ["من فضلك", "عفوًا"] },
-        { word: "Wo", translations: ["أين"] },
+        { word: "Wo", translations: ["اين"] },
         { word: "Hier", translations: ["هنا"] },
         { word: "Da", translations: ["هناك"] },
         { word: "Links", translations: ["يسار"] },
         { word: "Rechts", translations: ["يمين"] },
-        { word: "Geradeaus", translations: ["على طول"] },
-        { word: "نقطة هدية اكتب نفس الكلمة", translations: ["على طول"]}
+        { word: "Geradeaus", translations: ["الي الامام"] },
+        { word: "نقطة هدية اكتب نفس الكلمة", translations: ["نقطة هدية اكتب نفس الكلمة"]}
     ];
 
 

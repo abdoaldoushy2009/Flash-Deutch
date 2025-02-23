@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
         { word: "Rechts", translations: ["يمين"] },
         { word: "Geradeaus", translations: ["على طول"] },
         { word: "Bahnhof", translations: ["محطة القطار"] },
-        { word: "Flughafen", translations: ["المطار"] },
+        { word: "Flughafen", translations: ["مطار"] },
         { word: "Hotel", translations: ["فندق"] },
         { word: "Restaurant", translations: ["مطعم"] },
     
         // الأسرة والأصدقاء
         { word: "Familie", translations: ["عائلة"] },
-        { word: "Vater", translations: ["والد"] },
-        { word: "Mutter", translations: ["والدة"] },
+        { word: "Vater", translations: ["اب"] },
+        { word: "Mutter", translations: ["ام"] },
         { word: "Bruder", translations: ["أخ"] },
         { word: "Schwester", translations: ["أخت"] },
         { word: "Freund", translations: ["صديق"] },
@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
     
         // الطعام والشراب
         { word: "Brot", translations: ["خبز"] },
-        { word: "Wasser", translations: ["ماء"] },
-        { word: "Milch", translations: ["حليب"] },
+        { word: "Wasser", translations: ["ماء, مياه"] },
+        { word: "Milch", translations: ["حليب, لبن"] },
         { word: "Kaffee", translations: ["قهوة"] },
         { word: "Saft", translations: ["عصير"] },
         { word: "Obst", translations: ["فواكه"] },

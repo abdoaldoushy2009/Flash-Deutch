@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Flash Deutsch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    
+    <button id="leaderboardButton">📜 عرض المتصدرين</button>
+    <img id="gameLogoGame" src="favicon.png" alt="Game Logo" class="icon">
+    <div class="container" id="nameInputContainer">
+        
+        <h2>أدخل اسمك للبدء</h2>
+        <input type="text" id="playerName" placeholder="اسمك هنا">
+        <button id="startGameButton">ابدأ</button>
+    </div>
+
+    <div class="container" id="gameContainer" style="display:none;">
+        <h2 id="translationTitle">ترجم الكلمة التالية:</h2>
+        <p id="word">Hallo</p>
+        <button id="playSoundButton">🔊 تشغيل الصوت</button>
+        <img id="wordImage" src="" alt="صورة توضيحية">
+        <input type="text" id="userInput" placeholder="أدخل الترجمة">
+        <button id="checkAnswerButton">تحقق</button>
+        <div id="result"></div>
+        <p>النقاط: <span id="score">0</span></p>
+        <p>الأخطاء: <span class="hearts" id="lives">❤️❤️❤️</span></p>
+    </div>
+
+    <div class="container" id="leaderboard" style="display:none;">
+        <h2>لوحة المتصدرين</h2>
+        <ul id="leaderboardList"></ul>
+    </div>
+
+    <button id="addWordButton" class="addWordButton">+</button>
+    
+    <div id="addWordPopup" class="popup">
+        <h2>إضافة كلمة جديدة</h2>
+        <input type="text" id="newGermanWord" placeholder="الكلمة بالألمانية">
+        <input type="text" id="newArabicTranslation" placeholder="الترجمة بالعربية">
+        <button id="saveWordButton" class="addWordButton">حفظ</button>
+        <button id="closePopupButton">&times;</button>
+    </div>
+
+ <!-- زر الترجمة (يبدأ بعلم السعودية 🇸🇦) -->
+<button id="translateButton" class="circle-button">🌎</button>
+
+
+<script src="script.js"></script>
+</body>
+</html>

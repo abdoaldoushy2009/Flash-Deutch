@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { word: "Familie", translations: ["عائلة", "الأهل", "family", "famille", "familia", "famiglia"] },
     { word: "Vater", translations: ["أب", "بابا","اب", "father", "père", "padre", "padre"] },
     { word: "Mutter", translations: ["أم", "ماما","ام", "mother", "mère", "madre", "madre"] },
-    { word: "Bruder", translations: ["أخ", "أخويا","اخ" "brother", "frère", "hermano", "fratello"] },
+    { word: "Bruder", translations: ["أخ", "أخويا","اخ", "brother", "frère", "hermano", "fratello"] },
     { word: "Schwester", translations: ["أخت", "أختي","اخت", "sister", "sœur", "hermana", "sorella"] },
     { word: "Freund", translations: ["صديق", "رفيق", "friend", "ami", "amigo", "amico"] },
     { word: "Freundin", translations: ["صديقة", "رفيقة", "girlfriend", "amie", "amiga", "amica"] },

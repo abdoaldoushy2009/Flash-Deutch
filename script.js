@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
     { word: "Guten Abend", translations: ["مساء الخير", "good evening", "bonsoir", "buenas tardes", "buona sera"] },
     { word: "Gute Nacht", translations: ["ليلة سعيدة", "تصبح على خير", "good night", "bonne nuit", "buenas noches", "buona notte"] },
     { word: "Wie geht’s?", translations: ["كيف حالك؟", "كيفك؟", "شلونك؟", "أخبارك؟", "how are you?", "comment ça va?", "¿cómo estás?", "come stai?"] },
-    { word: "Mir geht’s gut", translations: ["أنا بخير", "بخير الحمد لله", "I’m fine", "je vais bien", "estoy bien", "sto bene"] },
+    { word: "Mir geht’s gut", translations: ["أنا بخير", "بخير الحمد لله","انا بخير", "I’m fine", "je vais bien", "estoy bien", "sto bene"] },
     { word: "Danke", translations: ["شكرًا", "شكرا", "مشكور", "جزاك الله خيرًا", "thanks", "merci", "gracias", "grazie"] },
     { word: "Bitte", translations: ["من فضلك", "لو سمحت", "عفوًا", "you're welcome", "s'il vous plaît", "de nada", "prego"] },
 
     // الأماكن والاتجاهات
-    { word: "Wo", translations: ["أين؟", "وين؟", "where?", "où?", "¿dónde?", "dove?"] },
+    { word: "Wo", translations: ["أين؟", "وين؟","اين", "where?", "où?", "¿dónde?", "dove?"] },
     { word: "Hier", translations: ["هنا", "هون", "here", "ici", "aquí", "qui"] },
     { word: "Da", translations: ["هناك", "over there", "là-bas", "allí", "lì"] },
     { word: "Links", translations: ["يسار", "شمال", "left", "gauche", "izquierda", "sinistra"] },
@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // الأسرة والأصدقاء
     { word: "Familie", translations: ["عائلة", "الأهل", "family", "famille", "familia", "famiglia"] },
-    { word: "Vater", translations: ["أب", "بابا", "father", "père", "padre", "padre"] },
-    { word: "Mutter", translations: ["أم", "ماما", "mother", "mère", "madre", "madre"] },
-    { word: "Bruder", translations: ["أخ", "أخويا", "brother", "frère", "hermano", "fratello"] },
-    { word: "Schwester", translations: ["أخت", "أختي", "sister", "sœur", "hermana", "sorella"] },
+    { word: "Vater", translations: ["أب", "بابا","اب", "father", "père", "padre", "padre"] },
+    { word: "Mutter", translations: ["أم", "ماما","ام", "mother", "mère", "madre", "madre"] },
+    { word: "Bruder", translations: ["أخ", "أخويا","اخ" "brother", "frère", "hermano", "fratello"] },
+    { word: "Schwester", translations: ["أخت", "أختي","اخت", "sister", "sœur", "hermana", "sorella"] },
     { word: "Freund", translations: ["صديق", "رفيق", "friend", "ami", "amigo", "amico"] },
     { word: "Freundin", translations: ["صديقة", "رفيقة", "girlfriend", "amie", "amiga", "amica"] },
     { word: "Kind", translations: ["طفل", "ولد", "ابن", "kid", "enfant", "niño", "bambino"] },

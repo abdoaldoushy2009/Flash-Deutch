@@ -1,65 +1,57 @@
 document.addEventListener("DOMContentLoaded", function () {
     const words = [
-        { word: "Hallo", translations: ["مرحبًا","hallo"] },
-        { word: "Guten Morgen", translations: ["صباح الخير"] },
-        { word: "Guten Tag", translations: ["تصبح علي خير"] },
-        { word: "Guten Abend", translations: ["مساء الخير"] },
-        { word: "Gute Nacht", translations: ["ليلة سعيدة"] },
-        { word: "Wie geht’s?", translations: ["كيف حالك؟"] },
-        { word: "Mir geht’s gut", translations: ["أنا بخير"] },
-        { word: "Danke", translations: ["شكرًا"] },
-        { word: "Bitte", translations: ["من فضلك", "عفوًا"] },
-        
-        // الأماكن والاتجاهات
-        { word: "Wo", translations: ["اين"] },
-        { word: "Hier", translations: ["هنا"] },
-        { word: "Da", translations: ["هناك"] },
-        { word: "Links", translations: ["يسار"] },
-        { word: "Rechts", translations: ["يمين"] },
-        { word: "Geradeaus", translations: ["على طول"] },
-        { word: "Bahnhof", translations: ["محطة القطار"] },
-        { word: "Flughafen", translations: ["مطار"] },
-        { word: "Hotel", translations: ["فندق"] },
-        { word: "Restaurant", translations: ["مطعم"] },
+    // التحيات والمجاملات
+    { word: "Hallo", translations: ["مرحبًا", "مرحبا", "هلا", "أهلًا", "اهلا", "hello", "salut", "ciao", "hola"] },
+    { word: "Guten Morgen", translations: ["صباح الخير", "صباح النور", "good morning", "bonjour", "buenos días", "buongiorno"] },
+    { word: "Guten Tag", translations: ["نهارك سعيد", "طاب يومك", "good day", "bonjour", "buen día", "buona giornata"] },
+    { word: "Guten Abend", translations: ["مساء الخير", "good evening", "bonsoir", "buenas tardes", "buona sera"] },
+    { word: "Gute Nacht", translations: ["ليلة سعيدة", "تصبح على خير", "good night", "bonne nuit", "buenas noches", "buona notte"] },
+    { word: "Wie geht’s?", translations: ["كيف حالك؟", "كيفك؟", "شلونك؟", "أخبارك؟", "how are you?", "comment ça va?", "¿cómo estás?", "come stai?"] },
+    { word: "Mir geht’s gut", translations: ["أنا بخير", "بخير الحمد لله", "I’m fine", "je vais bien", "estoy bien", "sto bene"] },
+    { word: "Danke", translations: ["شكرًا", "شكرا", "مشكور", "جزاك الله خيرًا", "thanks", "merci", "gracias", "grazie"] },
+    { word: "Bitte", translations: ["من فضلك", "لو سمحت", "عفوًا", "you're welcome", "s'il vous plaît", "de nada", "prego"] },
+
+    // الأماكن والاتجاهات
+    { word: "Wo", translations: ["أين؟", "وين؟", "where?", "où?", "¿dónde?", "dove?"] },
+    { word: "Hier", translations: ["هنا", "هون", "here", "ici", "aquí", "qui"] },
+    { word: "Da", translations: ["هناك", "over there", "là-bas", "allí", "lì"] },
+    { word: "Links", translations: ["يسار", "شمال", "left", "gauche", "izquierda", "sinistra"] },
+    { word: "Rechts", translations: ["يمين", "يمينك", "right", "droite", "derecha", "destra"] },
+    { word: "Geradeaus", translations: ["على طول", "الي الأمام", "straight ahead", "tout droit", "recto", "dritto"] },
+    { word: "Bahnhof", translations: ["محطة القطار", "train station", "gare", "estación de tren", "stazione ferroviaria"] },
+    { word: "Flughafen", translations: ["مطار", "airport", "aéroport", "aeropuerto", "aeroporto"] },
+    { word: "Hotel", translations: ["فندق", "hotel", "hôtel", "hotel", "albergo"] },
+    { word: "Restaurant", translations: ["مطعم", "مطعَم", "restaurant", "restaurante", "ristorante"] },
+
+    // الأسرة والأصدقاء
+    { word: "Familie", translations: ["عائلة", "الأهل", "family", "famille", "familia", "famiglia"] },
+    { word: "Vater", translations: ["أب", "بابا", "father", "père", "padre", "padre"] },
+    { word: "Mutter", translations: ["أم", "ماما", "mother", "mère", "madre", "madre"] },
+    { word: "Bruder", translations: ["أخ", "أخويا", "brother", "frère", "hermano", "fratello"] },
+    { word: "Schwester", translations: ["أخت", "أختي", "sister", "sœur", "hermana", "sorella"] },
+    { word: "Freund", translations: ["صديق", "رفيق", "friend", "ami", "amigo", "amico"] },
+    { word: "Freundin", translations: ["صديقة", "رفيقة", "girlfriend", "amie", "amiga", "amica"] },
+    { word: "Kind", translations: ["طفل", "ولد", "ابن", "kid", "enfant", "niño", "bambino"] },
+    { word: "Eltern", translations: ["والدين", "الأبوان", "parents", "parents", "padres", "genitori"] },
+
+    // الطعام والشراب
+    { word: "Brot", translations: ["خبز", "عيش", "bread", "pain", "pan", "pane"] },
+    { word: "Wasser", translations: ["ماء", "مياه", "water", "eau", "agua", "acqua"] },
+    { word: "Milch", translations: ["حليب", "لبن", "milk", "lait", "leche", "latte"] },
+    { word: "Kaffee", translations: ["قهوة", "coffee", "café", "café", "caffè"] },
+    { word: "Saft", translations: ["عصير", "juice", "jus", "zumo", "succo"] },
+    { word: "Obst", translations: ["فواكه", "fruits", "fruits", "frutas", "frutta"] },
+    { word: "Gemüse", translations: ["خضروات", "خضار", "vegetables", "légumes", "verduras", "verdure"] },
+    { word: "Fleisch", translations: ["لحم", "meat", "viande", "carne", "carne"] },
+    { word: "Fisch", translations: ["سمك", "fish", "poisson", "pescado", "pesce"] },
+
+    // أفعال أساسية
+    { word: "sein", translations: ["يكون", "to be", "être", "ser", "essere"] },
+    { word: "haben", translations: ["يملك", "to have", "avoir", "tener", "avere"] },
+    { word: "gehen", translations: ["يذهب", "to go", "aller", "ir", "andare"] },
+    { word: "kommen", translations: ["يأتي", "to come", "venir", "venir"] }
     
-        // الأسرة والأصدقاء
-        { word: "Familie", translations: ["عائلة"] },
-        { word: "Vater", translations: ["اب"] },
-        { word: "Mutter", translations: ["ام"] },
-        { word: "Bruder", translations: ["اخ"] },
-        { word: "Schwester", translations: ["اخت"] },
-        { word: "Freund", translations: ["صديق"] },
-        { word: "Freundin", translations: ["صديقة"] },
-        { word: "Kind", translations: ["طفل"] },
-        { word: "Eltern", translations: ["والدين"] },
-    
-        // الطعام والشراب
-        { word: "Brot", translations: ["خبز"] },
-        { word: "Wasser", translations: ["ماء, مياه"] },
-        { word: "Milch", translations: ["حليب, لبن"] },
-        { word: "Kaffee", translations: ["قهوة"] },
-        { word: "Saft", translations: ["عصير"] },
-        { word: "Obst", translations: ["فواكه"] },
-        { word: "Gemüse", translations: ["خضروات"] },
-        { word: "Fleisch", translations: ["لحم"] },
-        { word: "Fisch", translations: ["سمك"] },
-        { word: "Hallo", translations: ["مرحبًا"] },
-        { word: "Guten Morgen", translations: ["صباح الخير"] },
-        { word: "Guten Tag", translations: ["نهارك سعيد"]  },
-        { word: "Guten Abend", translations: ["مساء الخير"] },
-        { word: "Gute Nacht", translations: ["ليلة سعيدة"] },
-        { word: "Wie geht’s?", translations: ["كيف حالك ؟"] },
-        { word: "Mir geht’s gut", translations: ["انا بخير"] },
-        { word: "Danke", translations: ["شكرًا"] },
-        { word: "Bitte", translations: ["من فضلك", "عفوًا"] },
-        { word: "Wo", translations: ["اين"] },
-        { word: "Hier", translations: ["هنا"] },
-        { word: "Da", translations: ["هناك"] },
-        { word: "Links", translations: ["يسار"] },
-        { word: "Rechts", translations: ["يمين"] },
-        { word: "Geradeaus", translations: ["الي الامام"] },
-        { word: "نقطة هدية اكتب نفس الكلمة", translations: ["نقطة هدية اكتب نفس الكلمة"]}
-    ];
+ ];
 
 
     let score = 0;
